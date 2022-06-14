@@ -256,6 +256,18 @@ pointer-events: none;
 
 }
 
+.socs-icon {
+    width: 30px;
+    height: 30px;
+    justify-items: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
 
 /* section */
 .section-title {
