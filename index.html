@@ -51,27 +51,31 @@
     <section class="hero">
         <div class="overlay">
         <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button data-open-modal class="button">Заказать услугу</button>
-        <div class="backdrop is-hidden data-backdrop">
+        <button data-modal-open class="button">Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button data-close-modal>закрыть</button>
+                <button type="button" data-modal-close><svg class="soc-icon" width="11" height="11">
+                <use href=".//img/symbol-defs.svg#icon-button">
+                </use>
+            </svg>
+        </button>
             </div>
         </div>
         <script type="text/javascript">
-            const refs = {
-                openModalBtn: document.querySelector("[data-open-modal]"),
-                closeModalBtn: document.querySelector("[data-close-modal]"),
-                backdrop: document.querySelector("[data-backdrop]"),
-            };
-            refs.openModalBtn.addEventListener("click", toggleModal);
-            refs.closeModalBtn.addEventListener("click", toggleModal);
-            refs.backdropModalBtn.addEventListener("click", logBackdropClick);
-            function toggleModal() {
-                refs.backdrop.classList.toggle("is-hidden");
-            }
-            function logBackdropClick() {
-                console.log("Это клик в бэкдроп");
-            }
+            (() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
         </script>
 
 
@@ -452,7 +456,7 @@
         </section>
 
         <section class="online">
-            <h2 class="online-title">присоединяйтесь</h2>
+            <h2 class="online-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
             <ul class="masters-soc-list">
                     <li class="masters-soc-item">
                         <a href="" class="online-soc-link">
