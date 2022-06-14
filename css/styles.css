@@ -259,15 +259,18 @@ pointer-events: none;
 .socs-icon {
     width: 30px;
     height: 30px;
-    justify-items: center;
-    border: 1px solid #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
     position: absolute;
     top: 8px;
     right: 8px;
 }
 
+.svg-button {
+    justify-content: center;
+    fill: solid #000000;
+}
 
 /* section */
 .section-title {

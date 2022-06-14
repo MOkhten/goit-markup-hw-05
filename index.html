@@ -54,31 +54,13 @@
         <button data-modal-open class="button">Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="socs-icon" data-modal-close><svg class="" width="11" height="11">
+                <button type="button" class="socs-icon" data-modal-close><svg class="svg-button" width="11" height="11">
                 <use href=".//img/symbol-defs.svg#icon-button">
                 </use>
             </svg>
         </button>
             </div>
         </div>
-        <script type="text/javascript">
-            (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
-        </script>
-
-
         </div>
     </section>
     
@@ -499,7 +481,7 @@
     </div>
     </div>
     </footer>
-    
+    <script src="./js/modal.js"></script>
     </body>
     
     </html>
