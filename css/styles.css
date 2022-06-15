@@ -167,7 +167,7 @@ ul {
 }
 
 .soc-icon {
-    fill: #757575;
+    fill: currentColor;
 margin-right: 10px;
 }
 
@@ -176,7 +176,7 @@ margin-right: 10px;
 
 .soc-icon:hover,
 .soc-icon:focus {
-    fill: currentColor;
+    fill: var(--accent-color);
 }
 
 
